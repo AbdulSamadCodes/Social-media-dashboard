@@ -17,7 +17,7 @@
 
   <!--- main container --->
   <div class=main-container>
-    <div class="dashboard-container margin-inline-auto">
+    <div class="dashboard-container margin-inline-auto grid" style="--gap:20px;">
       <div class="dashboard__into flex flex-direction-column">
         <div class="dashboard__title-wrapper">
           <h1 class="dashboard__title ">
@@ -34,7 +34,7 @@
           </p>
 
           <div class="toggle__btn__wrapper">
-            <input type="checkbox" id="toggle__checkbox" class="toggle__checkbox absolute">
+            <input type="checkbox" id="toggle__checkbox" class="toggle__checkbox absolute" data-toggle>
             <label for="toggle__checkbox" class="toggle__button relative">
             </label>
           </div>
@@ -154,12 +154,233 @@
 
       </div>
 
+      <div class="dashboard__overview__container grid">
+        <h2 class="overview__title">
+          Overview - Today
+        </h2>
+
+        <div class="overview__list grid" style="--gap: 15px;">
+          <div class="overview__card grid" style="--gap:20px;">
+
+            <div class="page__views__wrapper flex flex-items-center flex-space-between">
+              <p class="page__view">Page Views</p>
+              <picture class="social__icon">
+                <img src="/images/icon-facebook.svg">
+              </picture>
+            </div>
+
+            <div class="page_views_wrapper flex flex-items-center flex-space-between">
+              <span class="page__views_counter">
+                87
+              </span>
+
+
+              <div class="progress__wrapper flex flex-items-center">
+
+                <picture>
+                  <img src="/images/icon-up.svg">
+                </picture>
+
+                <span class="progress__positive">
+                  3%
+                </span>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card grid" style="--gap:20px;">
+
+            <div class="page__views__wrapper flex flex-items-center flex-space-between">
+              <p class="page__view">Page Views</p>
+              <picture class="social__icon">
+                <img src="/images/icon-facebook.svg">
+              </picture>
+            </div>
+
+            <div class="page_views_wrapper flex flex-items-center flex-space-between">
+              <span class="page__views_counter">
+                52
+              </span>
+
+              <div class="flex flex-items-center progress__wrapper">
+                <picture>
+                  <img src="/images/icon-down.svg">
+                </picture>
+
+                <span class="progress__negative">
+                  2%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card grid" style="--gap:20px;">
+
+            <div class="page__views__wrapper flex flex-items-center flex-space-between">
+              <p class="page__view">Page Views</p>
+              <picture class="social__icon">
+                <img src="/images/icon-instagram.svg">
+              </picture>
+            </div>
+
+            <div class="page_views_wrapper flex flex-items-center flex-space-between">
+              <span class="page__views_counter">
+                5462
+              </span>
+
+              <div class="flex flex-items-center progress__wrapper">
+                <picture>
+                  <img src="/images/icon-up.svg">
+                </picture>
+
+                <span class="progress__positive">
+                  2257%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card grid" style="--gap:20px;">
+
+            <div class="page__views__wrapper flex flex-items-center flex-space-between">
+              <p class="page__view">Profile Views</p>
+              <picture class="social__icon">
+                <img src="/images/icon-instagram.svg">
+              </picture>
+            </div>
+
+            <div class="page_views_wrapper flex flex-items-center flex-space-between">
+              <span class="page__views_counter">
+                52k
+              </span>
+
+              <div class="flex flex-items-center progress__wrapper">
+                <picture>
+                  <img src="/images/icon-up.svg">
+                </picture>
+
+                <span class="progress__positive">
+                  1375%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card grid" style="--gap:20px;">
+
+            <div class="page__views__wrapper flex flex-items-center flex-space-between">
+              <p class="page__view">Retweets</p>
+              <picture class="social__icon">
+                <img src="/images/icon-twitter.svg">
+              </picture>
+            </div>
+
+            <div class="page_views_wrapper flex flex-items-center flex-space-between">
+              <span class="page__views_counter">
+                117
+              </span>
+
+              <div class="flex flex-items-center progress__wrapper">
+                <picture>
+                  <img src="/images/icon-up.svg">
+                </picture>
+
+                <span class="progress__positive">
+                  303%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card grid" style="--gap:20px;">
+
+            <div class="page__views__wrapper flex flex-items-center flex-space-between">
+              <p class="page__view">Likes</p>
+              <picture class="social__icon">
+                <img src="/images/icon-twitter.svg">
+              </picture>
+            </div>
+
+            <div class="page_views_wrapper flex flex-items-center flex-space-between">
+              <span class="page__views_counter">
+                507
+              </span>
+
+              <div class="flex flex-items-center progress__wrapper">
+                <picture>
+                  <img src="/images/icon-up.svg">
+                </picture>
+
+                <span class="progress__positive">
+                  553%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card grid" style="--gap:20px;">
+
+            <div class="page__views__wrapper flex flex-items-center flex-space-between">
+              <p class="page__view">Likes</p>
+              <picture class="social__icon">
+                <img src="/images/icon-youtube.svg">
+              </picture>
+            </div>
+
+            <div class="page_views_wrapper flex flex-items-center flex-space-between">
+              <span class="page__views_counter">
+                107
+              </span>
+
+              <div class="flex flex-items-center progress__wrapper">
+                <picture>
+                  <img src="/images/icon-down.svg">
+                </picture>
+
+                <span class="progress__negative">
+                  19%
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview__card grid" style="--gap:20px;">
+
+            <div class="page__views__wrapper flex flex-items-center flex-space-between">
+              <p class="page__view">Total Views</p>
+              <picture class="social__icon">
+                <img src="/images/icon-youtube.svg">
+              </picture>
+            </div>
+
+            <div class="page_views_wrapper flex flex-items-center flex-space-between">
+              <span class="page__views_counter">
+                1407
+              </span>
+
+              <div class="flex flex-items-center progress__wrapper">
+                <picture>
+                  <img src="/images/icon-down.svg">
+                </picture>
+
+                <span class="progress__negative">
+                  12%
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
     </div>
   </div>
 
 
   <!--custom script link --->
-  <script src=" /script.js">
+  <script src="script.js">
   </script>
 
 </body>

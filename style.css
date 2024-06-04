@@ -7,7 +7,8 @@
   /* spacings */
   --main-container-padding: 20px 10px;
   --spacing-intro-wrappers: 15px;
-  --dashboard-social-margin: 30px;
+  --overview-card-padding: 20px 15px;
+  --overview-list-margin: 20px;
 
   /* widths and heights */
   --dashboard-container-max-width: 280px;
@@ -45,7 +46,7 @@
   /* typography */
   --ff-Inter: "Inter", sans-serif;
 
-  --fs-dashboard-title: 1.8rem;
+  --fs-dashboard-title: 1.6rem;
   --fs-intro-wrappers: 1.3rem;
   --fs-followers-count: 3.2rem;
 }
@@ -194,6 +195,14 @@ body {
   font-weight: 600;
 }
 
+.dashboard__social__card,
+.overview__card {
+  --background-color: var(--clr-light-grayish-blue-card-bg);
+
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+
 /* main styles */
 
 .main-container {
@@ -204,6 +213,7 @@ body {
 /* dashboard-inro */
 .dashboard-container {
   max-width: var(--dashboard-container-max-width);
+  gap: var(--gap);
 }
 
 .dashboard__title-wrapper {
@@ -275,18 +285,14 @@ body {
 /* dashboard-social-list */
 
 .dashboard__social__list {
-  margin-block-start: var(--dashboard-social-margin);
   gap: var(--gap);
 }
 
 .dashboard__social__card {
-  --background-color: var(--clr-light-grayish-blue-card-bg);
   --gap: 20px;
 
-  background-color: var(--background-color);
   padding-block: 20px;
   gap: var(--gap);
-  border-radius: 5px;
   transition: background-color 300ms ease;
 }
 
@@ -302,7 +308,8 @@ body {
   border-top-right-radius: 5px;
 }
 
-body.light-theme .dashboard__social__card:hover {
+body.light-theme .dashboard__social__card:hover,
+body.light-theme .overview__card:hover {
   background-color: hsla(225, 4%, 60%, 0.3);
 }
 
@@ -335,4 +342,38 @@ body.light-theme .dashboard__social__card:hover {
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 1.5px;
+}
+
+/* dashboard overview */
+
+.overview__title {
+  --color: var(--clr-dark-grayish-blue-text);
+
+  color: var(--color);
+  font-size: var(--fs-dashboard-title);
+}
+
+.overview__list {
+  margin-block-start: var(--overview-list-margin);
+  gap: var(--gap);
+}
+
+.overview__card {
+  padding: var(--overview-card-padding);
+  gap: var(--gap);
+}
+
+.page__view {
+  --color: var(--clr-dark-grayish-blue-text);
+
+  color: var(--color);
+  font-weight: 700;
+}
+
+.page__views_counter {
+  --color: var(--clr-very-dark-blue-text);
+
+  color: var(--color);
+  font-weight: 800;
+  font-size: 1.5rem;
 }
